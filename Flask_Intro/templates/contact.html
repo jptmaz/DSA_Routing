@@ -1,12 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Profile Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: #ffd1dc; /* Soft pink background color */
+            font-family: Arial, sans-serif; /* Choose an appropriate font */
+            position: relative;
+        }
+
+        h1, h2, p, a {
+            font-weight: bold; /* Bold text font for headings, paragraphs, and links */
+        }
+
+        nav {
+            background-color: #fff; /* White background for the navigation bar */
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333; /* Dark text color for links */
+        }
+
+        a:hover {
+            color: #e60073; /* Dark pink text color on hover for links */
+        }
+
+        body::before,
+        body::after,
+        .border-hearts::before,
+        .border-hearts::after {
+            content: '\2665'; /* Unicode for heart symbol */
+            font-size: 50px;
+            position: absolute;
+            color: #e60073; /* Dark pink color for hearts */
+        }
+
+        body::before,
+        .border-hearts::before {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        body::after,
+        .border-hearts::after {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .border-hearts {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .content {
+            z-index: 1;
+        }
+    </style>
 </head>
 <body>
-    <h1>Contact</h1>
-    <p>Reach me through:</p>
-    <p>Email address: jpmazaredo@filemail.com</p>
-    <p>Telephone Number: 71234567s</p>
+    <div class="border-hearts">
+        <div class="content">
+            <h1>Welcome to Our Website</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/works">Works</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h2>Welcome to my programming works</h2>
+            <p>Instruction: create a route and a page for the links that are not working</p>
+
+            <ul>
+                <li><a href="/works">toUpperCase</a></li>
+                <li><a href="/areaOfcirle">Area of a Circle</a></li>
+                <li><a href="/areaOfTriangle">Area of a Triangle</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
