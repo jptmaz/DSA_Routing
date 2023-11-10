@@ -8,6 +8,7 @@
         body {
             background-color: #ffd1dc; /* Soft pink background color */
             font-family: Arial, sans-serif; /* Choose an appropriate font */
+            position: relative;
         }
 
         h1, h2, p, a {
@@ -39,14 +40,24 @@
             color: #e60073; /* Dark pink text color on hover for links */
         }
 
-        body::before {
+        body::before,
+        body::after {
             content: '\2665'; /* Unicode for heart symbol */
             font-size: 50px;
-            position: fixed;
-            top: 50%;
+            position: absolute;
+            color: #e60073; /* Dark pink color for hearts */
+        }
+
+        body::before {
+            top: 0;
             left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0.1;
+            transform: translateX(-50%);
+        }
+
+        body::after {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
     </style>
 </head>
