@@ -6,44 +6,47 @@
     <title>Home Page</title>
     <style>
         body {
-            background-color: #ffd4d4; /* Soft pink background color */
-            color: #ff0066; /* Text color */
-            font-weight: bold;
-            font-family: 'Arial', sans-serif;
+            background-color: #ffd1dc; /* Soft pink background color */
+            font-family: Arial, sans-serif; /* Choose an appropriate font */
         }
 
-        h1 {
-            background-image: url('heart-pattern.png'); /* Replace 'heart-pattern.png' with the actual path to your heart design image */
-            background-repeat: repeat;
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
+        h1, h2, p, a {
+            font-weight: bold; /* Bold text font for headings, paragraphs, and links */
         }
 
-        nav ul {
+        nav {
+            background-color: #fff; /* White background for the navigation bar */
+            padding: 10px;
+        }
+
+        ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
         }
 
-        nav li {
+        li {
             display: inline;
             margin-right: 20px;
         }
 
-        nav a {
+        a {
             text-decoration: none;
-            color: #ff0066; /* Link color */
+            color: #333; /* Dark text color for links */
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+        a:hover {
+            color: #e60073; /* Dark pink text color on hover for links */
         }
 
-        ul li a {
-            text-decoration: none;
-            color: #ff0066; /* Link color */
+        body::before {
+            content: '\2665'; /* Unicode for heart symbol */
+            font-size: 50px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1;
         }
     </style>
 </head>
@@ -58,8 +61,8 @@
         </ul>
     </nav>
 
-    <h1>Welcome to my programming works</h1>
-    <p>Instruction: create a route and a page for the link that are not working</p>
+    <h2>Welcome to my programming works</h2>
+    <p>Instruction: create a route and a page for the links that are not working</p>
 
     <ul>
         <li><a href="/works">toUpperCase</a></li>
